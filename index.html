@@ -1,549 +1,573 @@
-<Body>
-    <style>
+<body>
+  <style>
     /* Reset das Margens*/
-        *{
-        margin: 0;
-        padding: 0;
-          }
+    * {
+      margin: 0;
+      padding: 0;
+    }
     /* PAGINA PAI*/
-    .divpages{
-            justify-content: center;
-            align-items: center;
-            display: grid;
-            
-        
-
-        }  
+    .divpages {
+      justify-content: center;
+      align-items: center;
+      display: grid;
+    }
     /* Css Header*/
-    .namepg{
-        color: green;
-        text-align: justify;
-        font-size: 15pt;
-        font-family: arial;
-        font-weight: bold;
-        margin-left: auto; 
-        margin-right: auto;
-        
-    }        
-    .titulo { 
-        font-size: 15pt;
-        font-family: arial;
-        text-align: center;
-        font-weight: bold;
-            
-        } 
-    
+    .namepg {
+      color: green;
+      text-align: justify;
+      font-size: 15pt;
+      font-family: arial;
+      font-weight: bold;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .titulo {
+      font-size: 15pt;
+      font-family: arial;
+      text-align: center;
+      font-weight: bold;
+    }
+
     /* Css da linha sem ser o '--'*/
-.divhead{
-            position: relative;
-            border:  solid green 2px;
-            border-left-color: white;
-            border-right-color: white;
-            width: 94%;
-            margin-left: auto; 
-            margin-right: auto;
-            display: grid;
-            grid-template-areas: 'fundo fundo''fundo fundo' ;
-            padding: 5px;
-            
+    .divhead {
+      position: relative;
+      border: solid green 2px;
+      border-left-color: white;
+      border-right-color: white;
+      width: 94%;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-areas: "fundo fundo" "fundo fundo";
+      padding: 5px;
     }
-.lines{ 
-        border: solid 2px black;
-        z-index: 0;
-        position: absolute;
-        border-left-color: white;
-        border-right-color: white;
-        width: 99%; 
+    .lines {
+      border: solid 2px black;
+      z-index: 0;
+      position: absolute;
+      border-left-color: white;
+      border-right-color: white;
+      width: 99%;
+    }
 
-}    
-        
-.linepst{
-        z-index: 1;
-        margin-top: 13px;
-        margin-left: 6px;
-        
-        }  
-.linepst2{ 
-        z-index: 0;
-        margin-top: 33px;
-        margin-left: 6px;
-        border-top-color: white;
-        
-        }
-.fundo{ 
-        z-index: 2;
-        width: max-content;    
-        background-color: white;
-        border-right:solid 10px white; 
-}        
-
-        
+    .linepst {
+      z-index: 1;
+      margin-top: 13px;
+      margin-left: 6px;
+    }
+    .linepst2 {
+      z-index: 0;
+      margin-top: 33px;
+      margin-left: 6px;
+      border-top-color: white;
+      width: 98%;
+    }
     
-            
+    .linepst4 {
+      z-index: 0;
+      margin-top: 76px;
+      margin-left: 6px;
+      height: 40px;
+      width: 98%;
+    }
+
+    .linepst5 {
+     z-index: 0;
+      margin-left: 6px;
+      height: 40px;
+      width: 98%;
+      border-top-color: white;
+    }
+    .fundo {
+      z-index: 2;
+      width: max-content;
+      background-color: white;
+      border-right: solid 10px white;
+    }
+
     /* Css do Corpo  */
-.divpage1{
-            border:  solid green 2px;
-            display: block;
-            width: 95%; 
-            margin-left: auto; 
-            margin-right: auto;
-            height: 750px;
-            grid-template-areas: 'pa1' 'pa2' 'pa4' 'pa5' 'pa6' 'pa7' 'pa8' 'pa9';
-        }
-      
-.pa1{ 
-     grid-area: pa1;
+    .divpage1 {
+      border: solid green 2px;
+      display: block;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 750px;
+      grid-template-areas: "pa1" "pa2" "pa4" "pa5" "pa6" "pa7" "pa8" "pa9";
+    }
+.pas{position: relative;
      font-family: arial;
-     font-size:7pt;
-     display: grid;
-     grid-template-areas:'l1 l1 l1 l1' 
-                         'l2 l2 l3 l3'
-                        'l4 l4 l4 l4'
-                        'l5 l6 l7 l7'
-                        'l8 l8 l9 l9'
-                        'l10 l11 l12 l13'
-                        'l14 l14 l14 l14'
-                        'l15 l16 l16 l17';                    
-        border:  solid green 2px;
-        row-gap: 3px;
-        height: 15%;
-        }
+      font-size: 8pt;
+      display: grid;
+      border: solid green 2px;
 
-.l1{ 
+}
+    .pa1 {
+      grid-area: pa1;
+      grid-template-areas:
+        "l1 l1 l1 l1"
+        "l2 l2 l3 l3"
+        "l4 l4 l4 l4"
+        "l5 l6 l7 l7"
+        "l8 l8 l9 l9"
+        "l10 l11 l12 l13"
+        "l14 l14 l14 l14"
+        "l15 l16 l16 l17";
+      row-gap: 3px;
+      height: 17%;
+    }
+
+    .l1 {
+      font-weight: bold;
+      grid-area: l1;
+    }
+
+    .l2 {
+      grid-area: l2;
+    }
+    .l3 {
+      grid-area: l3;
+    }
+    .l4 {
+      grid-area: l4;
+    }
+    .l5 {
+      grid-area: l5;
+    }
+    .l6 {
+      grid-area: l6;
+    }
+    .l7 {
+      grid-area: l7;
+    }
+    .l8 {
+      grid-area: l8;
+    }
+    .l9 {
+      grid-area: l9;
+    }
+    .l10 {
+      grid-area: l10;
+    }
+    .l11 {
+      grid-area: l11;
+    }
+    .l12 {
+      grid-area: l12;
+    }
+    .l13 {
+      grid-area: l13;
+    }
+    .l14 {
+      grid-area: l14;
+    }
+    .l15 {
+      grid-area: l15;
+    }
+    .l16 {
+      grid-area: l16;
+    }
+    .l17 {
+      grid-area: l17;
+    }
+    
+    .pa2 {
+      position: relative;  
+      grid-area: pa2;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid green 2px;
+      height: 17%;
+      text-align: justify;
+      grid-template-areas: "l1 l1 l1 l1 l1" 
+                           "l2 l2 l2 l2 l2"
+                           "l3 l3 .  l4 l4"
+                           "l5 l5 l5 l5 l5"
+                           "l6 l6 l6 l6 l6"
+                           "l7 l8 l9 l10 l11"
+                           "l12 l12 l12 l12 l12"
+                           ;                     
+    }
+    .pa3 {
+      grid-area: pa3;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid red 2px;
+      height: 7%;
+    }
+    .pa4 {
+      grid-area: pa4;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid red 2px;
+      height: 11%;
+    }
+    .pa5 {
+      grid-area: pa5;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid red 2px;
+      height: 7%;
+    }
+    .pa6 {
+      grid-area: pa6;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid red 2px;
+      height: 7%;
+    }
+    .pa7 {
+      grid-area: pa7;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid red 2px;
+      height: 7%;
+    }
+    .pa8 {
+      grid-area: pa8;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid red 2px;
+      height: 11%;
+    }
+    .pa9 {
+      grid-area: pa9;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid red 2px;
+      height: 7%;
+    }
+
+    .topic {
     font-weight: bold;
-    grid-area: l1;
-}
-
-.l2{
-    grid-area: l2;
-    
-}
-.l3{
-    grid-area: l3;
-    
-}
-.l4{
-    grid-area: l4;
-    
-}
-.l5{
-    grid-area: l5;
-    
-}
-.l6{
-    grid-area: l6;
-    
-}
-.l7{
-    grid-area: l7;
-    
-}
-.l8{
-    grid-area: l8;
-}
-.l9{
-    grid-area: l9;
-}
-.l10{
-    grid-area: l10;
-}
-.l11{
-    grid-area: l11;
-}
-.l12{
-    grid-area: l12;
-}
-.l13{
-    grid-area: l13;
-}
-.l14{
-    grid-area: l14;
-}
-.l15{
-    grid-area: l15;
-}
-.l16{
-    grid-area: l16;
-}
-.l17{
-    grid-area: l17;
-}
-.pa2{ 
-     grid-area: pa2;
-     font-family: arial;
-        font-size:8pt;
-        display: grid;                  
-        border:  solid red 2px;
-        height: 10%;
-        text-align: justify;
-        display: grid;
-        grid-template-areas: '';
-        
-        }
-.pa3{ 
-     grid-area: pa3;
-     font-family: arial;
-        font-size:8pt;
-        display: grid;                  
-        border:  solid red 2px;
-        height: 7%;
-        
-        }
-.pa4{ 
-grid-area: pa4;
-     font-family: arial;
-        font-size:8pt;
-        display: grid;                  
-        border:  solid red 2px;
-        height: 11%;
-        
-}
-.pa5{ 
-       grid-area: pa5;
-       font-family: arial;
-        font-size:8pt;
-        display: grid;                  
-        border:  solid red 2px;
-        height: 7%;
-        
-}
-.pa6{ 
-        grid-area: pa6;
-        font-family: arial;
-        font-size:8pt;
-        display: grid;                  
-        border:  solid red 2px;
-        height: 7%;
-        
-}
-.pa7{ 
-        grid-area: pa7;
-        font-family: arial;
-        font-size:8pt;
-        display: grid;                  
-        border:  solid red 2px;
-        height: 7%;
-        
-        }
-.pa8{ 
-        grid-area: pa8;
-        font-family: arial;
-        font-size:8pt;
-        display: grid;                  
-        border:  solid red 2px;
-        height: 11%;
-        
-        }
-.pa9{ 
-        grid-area: pa9;
-        font-family: arial;
-        font-size:8pt;
-        display: grid;                  
-        border:  solid red 2px;
-        height: 7%;
-        
-        }
-
-.topic{ 
-        border: solid black 3px;
-        font-weight: bold;
-
-}
-
-
-     /* Css do rodapé  */   
-.divupfotter{
-            position: relative;
-            display: grid;
-            height:80px ;
-            grid-template-areas: 'local dt''med paci';
-            grid-row-gap: 10px;
-            border-left-color: white;
-            border-right-color: white;
-            font-family: Arial;
-            font-size:10pt; 
-            width: 95%; 
-            margin-left: auto; 
-            margin-right: auto;
-            padding: 10px;
-         }
-
-.linepst3{   
-        width: 90%;
-        height: 25px;
-        margin-top: 20px;
-        margin-left: 50px;
-        
-
-         }
-.local{
-        grid-area: local;
-        z-index: 2;
-        width: max-content;    
-        background-color: white;
-        border-right:solid 10px white;
-        
-        
-}
-.dt{
-    grid-area: dt;
-    z-index: 2; 
-    width: max-content;   
-    background-color: white;
-    border-right:solid 10px white;
-    margin-left: auto;
-    margin-right: auto;
-    
     }
-.med{
-    grid-area: med;
-    z-index: 2;
-    text-align: center; 
-    
-    
-}
-.paci
-{  
-    grid-area: paci;
-    z-index: 2;
-    text-align: center;    
-}
+.brkcontent{
+    width: auto;
+    align-items: center;
+    border: solid 1px black;
+    text-align: justify;
+}    
 
-.space
-{  
-    position: absolute;
-    grid-area: space;
-    z-index: 2;
-    width: 70px;
-    height: 10px;    
-    background-color: white;
-    margin-left: 40%;
-    margin-top: 40px;
-
-
+    /* Css do rodapé  */
+    .divupfotter {
+      position: relative;
+      display: grid;
+      height: 80px;
+      grid-template-areas: "local dt" "med paci";
+      grid-row-gap: 10px;
+      border-left-color: white;
+      border-right-color: white;
+      font-family: Arial;
+      font-size: 10pt;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
     }
 
-.divfotter{
-    position: relative;
-            display: grid;
-            grid-template-areas: 'txtftt numerador';
-            grid-template-columns: 90% 1fr;
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-            font-family: Arial; 
-            text-align: justify;
-            font-size: 80%;
-            width: 95%; 
-            margin-left: auto; 
-            margin-right: auto;
-            border-top: solid 3px green ;
-            border-bottom: solid 3px black;
-            
-        
-    } 
-.txtftt{
-    grid-area: txtftt;
-    font-size: 9pt;
-    } 
-    
-    
-    /* Configurações gerais */    
-    
-.numerador {
-            grid-area: numerador;
-            align-self: end;
-            text-align: end;
-            font-weight: bold;
+    .linepst3 {
+      width: 90%;
+      height: 25px;
+      margin-top: 20px;
+      margin-left: 50px;
     }
-.brkpg{
-        page-break-after: always; 
+    .local {
+      grid-area: local;
+      z-index: 2;
+      width: max-content;
+      background-color: white;
+      border-right: solid 10px white;
     }
-.barrahead{
-  position: absolute;
-  margin-top: 14px;
-  margin-left: auto;
-  font-size: 17pt;
-  align-items: end;
-  margin-left: 80%;
+    .dt {
+      grid-area: dt;
+      z-index: 2;
+      width: max-content;
+      background-color: white;
+      border-right: solid 10px white;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .med {
+      grid-area: med;
+      z-index: 2;
+      text-align: center;
+    }
+    .paci {
+      grid-area: paci;
+      z-index: 2;
+      text-align: center;
     }
 
-.barraftt{
-  position: absolute;
-  margin-top: 2px;
-  margin-left: auto;
-  font-size: 15pt;
-  align-items: end;
-  margin-left: 80%;
+    .space {
+      position: absolute;
+      grid-area: space;
+      z-index: 2;
+      width: 70px;
+      height: 10px;
+      background-color: white;
+      margin-left: 40%;
+      margin-top: 40px;
     }
 
-    
+    .divfotter {
+      position: relative;
+      display: grid;
+      grid-template-areas: "txtftt numerador";
+      grid-template-columns: 90% 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      font-family: Arial;
+      text-align: justify;
+      font-size: 80%;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      border-top: solid 3px green;
+      border-bottom: solid 3px black;
+    }
+    .txtftt {
+      grid-area: txtftt;
+      font-size: 9pt;
+    }
+
+    /* Configurações gerais */
+
+    .numerador {
+      grid-area: numerador;
+      align-self: end;
+      text-align: end;
+      font-weight: bold;
+    }
+    .brkpg {
+      page-break-after: always;
+    }
+    .barrahead {
+      position: absolute;
+      margin-top: 14px;
+      margin-left: auto;
+      font-size: 17pt;
+      align-items: end;
+      margin-left: 80%;
+    }
+
+    .barraftt {
+      position: absolute;
+      margin-top: 2px;
+      margin-left: auto;
+      font-size: 15pt;
+      align-items: end;
+      margin-left: 80%;
+    }
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}      
   </style>
 
-<!-- Inicio do Code-->
-    <div class="divpages">
-        <p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
-        <div class="divhead">
-            <div class="linepst lines">&nbsp;</div>
-            <p class="fundo">Médico </p>
-            <p class="fundo">CRM</p>
-            <p class="fundo">Local de Atendimento</p>
-        </div> 
-        <div class="namepg"> FASE AMBULATORIAL: CONSULTA E AVALIAÇÃO PRÉ - OPERATÓRIA</div>  
-        <div class="divpage1">
-             <div class="pa1">
-                <p class="l1"> A &#8318; IDENTIFICAÇÃO DO PACIENTE </p>
-                <p class="l2">Nome:%nome_paciente%</p>
-                <p class="l3">Nº de Registro: %registro_paciente%</p>
-                <p class="l4">Endereço: %endereco_paciente% %bairro_paciente% %estado_paciente% %numero_end1_paciente%</p>
-                <p class="l5">CEP: %cep_paciente%</p>
-                <p class="l6">UF: </p>
-                <p class="l7">E-Mail: </p>
-                <p class="l8">Telefone:%fone1_paciente%</p>
-                <p class="l9">Celular:%fone2_paciente% </p>
-                <p class="l10">RG:%rg_paciente% </p>
-                <p class="l11">Emissor </p>
-                <p class="l12">Data Emissão </p>
-                <p class="l13">Sexo: %sexo_paciente%  </p>
-                <p class="l14">CIC / CPF: %cpf_paciente% </p>
-                <p class="l15">Data de Nascimento:%nascimento_paciente% </p>
-                <p class="l16">Local de Nascimento: %pais_nascimento% </p>
-                <p class="l17">UF:</p>      
-            </div>
-            <div class="pa2">
-                  <p class=" fundo topic "> B) PATOLOGIA / INDICAÇÃO </p>
-                  <p class=" fundo topic ">1) Anamnase </p> 
-                  <p> Geral Específica </p> 
-                  <p class=" fundo topic "> 2) Antecedentes </p> 
-                  <p>Referidos </p> 
-                  <p>Pesquisados <input type="checkbox"> Tabagismo<input type="checkbox"> Alergia Tratamento <input type="checkbox"> Clínico Psiquiátrico<input type="checkbox"> </p> 
-                  <p>Uso de Medicamentos </p> 
-                     
-                </div>
-            <div class="pa3">
-                <p>UF: </p>   
-             </div>
-             <div class="pa4">
-             <p>UF: </p>   
-             </div>
-             <div class="pa5">
-             <p>UF: </p>   
-             </div>
-             <div class="pa6">
-             <p>UF: </p>   
-             </div>
-             <div class="pa7">
-             <p>UF: </p>   
-             </div>
-             <div class="pa8">
-             <p>UF: </p>   
-             </div>
-             <div class="pa9">
-             <p>UF: </p>   
-             </div>     
-        </div>         
-        <div class="divupfotter">
-            <div class="linepst3 lines">&nbsp;</div>
-            <p class="local">Local</p>
-            <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-            <p class="dt">Data</p>
-            <div class="space">&nbsp;</div>
-            <p class=" med">Médico Assistente</p> 
-            <p class="paci">Paciente ou Responsável</p> 
-        </div>  
-        <div class="divfotter">
-        <p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
-            Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
-        <p class="numerador">Pag. 1</p>
-        </div>  
-        
-        <div class="brkpg"> <br> 
-<!-- ACABOU FIRST PAGE-->  
-        </div>
-<!-- Inicio 2 PAGE-->
-     <p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
-        <div class="divhead">
-            <div class="linepst lines">&nbsp;</div>
-            <div class="  lines linepst2">&nbsp;</div>
-            <p class="fundo">Médico </p>
-            <p class="fundo">CRM</p>
-            <p class="fundo">Paciente </p>
-            <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-            <p class="fundo">Data de Nascimento</p> 
-            <p class="fundo">Local de Atendimento</p>
-        </div> 
-        <div class="namepg"> FASE PRÉ - OPERATÓRIO</div>   
-        <div class="divpage1"></div>   
-        <div class="divupfotter">
-            <div class="linepst3 lines">&nbsp;</div>
-            <p class="local">Local</p>
-            <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-            <p class="dt">Data</p>
-            <div class="space">&nbsp;</div>
-            <p class=" med">Médico Assistente</p> 
-            <p class="paci">Paciente ou Responsável</p> 
-        </div>  
-         <div class="divfotter">
-        <p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
-            Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
-            <p class="numerador">Pag. 2</p>
-         </div>
-      <div class="brkpg"> <br></div>
-<!-- Inicio 3 PAGE-->
-        <p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
-        <div class="divhead">
-        <div class="linepst lines">&nbsp;</div>
-     <div class="linepst2 lines">&nbsp;</div>
-      <p class="fundo">Médico </p>
-     <p class="fundo">CRM</p>
-     <p class="fundo">Paciente </p>
-     <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-     <p class="fundo">Data de Nascimento</p> 
-     <p class="fundo">Local de Atendimento</p>
-     </div> 
-     <div class="namepg"> FASE TRANS - OPERATÓRIO</div>   
-     <div class="divpage1"></div>   
-     <div class="divupfotter">
-     <div class="linepst3 lines">&nbsp;</div>
-     <p class="local">Local</p>
-     <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-     <p class="dt">Data</p>
-     <div class="space">&nbsp;</div>
-     <p class=" med">Médico Assistente</p> 
-     <p class="paci">Paciente ou Responsável</p> 
-     </div>  
-     <div class="divfotter">
-     <p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
-     Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
-     <p class="numerador">Pag. 3</p>
+  <!-- Inicio do Code-->
+  <div class="divpages">
+    <p class="titulo">
+      Normas Informativas E Compartilhada em Cirurgia Plástica*
+    </p>
+    <div class="divhead">
+      <div class="linepst lines">&nbsp;</div>
+      <p class="fundo">Médico</p>
+      <p class="fundo">CRM</p>
+      <p class="fundo">Local de Atendimento</p>
+    </div>
+    <div class="namepg">FASE AMBULATORIAL: CONSULTA E AVALIAÇÃO PRÉ - OPERATÓRIA
+    </div>
+    <div class="divpage1">
+      <div class="pa1 pas">
+        <p class="l1 topic fundo">A)IDENTIFICAÇÃO DO PACIENTE</p>
+        <p class="l2">Nome:%nome_paciente%</p>
+        <p class="l3">Nº de Registro: %registro_paciente%</p>
+        <p class="l4">
+          Endereço: %endereco_paciente% %bairro_paciente% %estado_paciente%
+          %numero_end1_paciente%
+        </p>
+        <p class="l5">CEP: %cep_paciente%</p>
+        <p class="l6">UF:</p>
+        <p class="l7">E-Mail:</p>
+        <p class="l8">Telefone:%fone1_paciente%</p>
+        <p class="l9">Celular:%fone2_paciente%</p>
+        <p class="l10">RG:%rg_paciente%</p>
+        <p class="l11">Emissor</p>
+        <p class="l12">Data Emissão</p>
+        <p class="l13">Sexo: %sexo_paciente%</p>
+        <p class="l14">CIC / CPF: %cpf_paciente%</p>
+        <p class="l15">Data de Nascimento:%nascimento_paciente%</p>
+        <p class="l16">Local de Nascimento: %pais_nascimento%</p>
+        <p class="l17">UF:</p>
       </div>
-     <div class="brkpg"> <br></div>
-<!-- Inicio 4 PAGE-->
-     <p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
-     <div class="divhead">
-     <div class="linepst lines">&nbsp;</div>
-     <div class="linepst2 lines">&nbsp;</div>
-     <p class="fundo">Médico </p>
-     <p class="fundo">CRM</p>
-     <p class="fundo">Paciente </p>
-     <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-     <p class="fundo">Data de Nascimento</p> 
-     <p class="fundo">Local de Atendimento</p>
-     </div> 
-     <div class="namepg"> FASE PÓS - OPERATÓRIO</div>   
-     <div class="divpage1"></div>   
-     <div class="divupfotter">
-     <div class="linepst3 lines">&nbsp;</div>
-     <p class="local">Local</p>
-     <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-     <p class="dt">Data</p>
-     <div class="space">&nbsp;</div>
-     <p class=" med">Médico Assistente</p> 
-     <p class="paci">Paciente ou Responsável</p> 
-     </div>  
-     <div class="divfotter">
-     <p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
-     Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
-     <p class="numerador">Pag. 4</p>
-     </div>
- </div>
-</Body>
+      <div class="pa2 pas">
+        <p class="fundo topic l1">B) PATOLOGIA / INDICAÇÃO</p>
+        <p class="fundo topic  l2">1) Anamnase</p>
+        <div class="lines linepst4">&nbsp;</div>
+        <p class="fundo l3 ">Geral</p>
+        <p class="fundo l4 ">Específica</p>
+        <p class="fundo l5 topic">2) Antecedentes</p>
+        <p class="fundo l6 " >Referidos</p>
+        <p class="fundo l7">Pesquisados <input type="checkbox"/></p> 
+        <p class="fundo l8">Tabagismo <input type="checkbox"/></p> 
+        <p class="fundo l9">Alergia <input type="checkbox" /></p> 
+        <p class="fundo l10">Clínico Tratamento <input type="checkbox" /></p>
+        <p class="fundo l11">Psiquiátrico <input type="checkbox" /></p>
+        <div class="lines linepst5"> &nbsp;</div>
+        <p class="fundo l12 ">Uso de Medicamentos</p>
+      </div>
+      <div class="pa3 pas">
+        <p>UF:</p>
+      </div>
+      <div class="pa4">
+        <p>UF:</p>
+      </div>
+      <div class="pa5">
+        <p>UF:</p>
+      </div>
+      <div class="pa6">
+        <p>UF:</p>
+      </div>
+      <div class="pa7">
+        <p>UF:</p>
+      </div>
+      <div class="pa8">
+        <p>UF:</p>
+      </div>
+      <div class="pa9">
+        <p>UF:</p>
+      </div>
+    </div>
+    <div class="divupfotter">
+      <div class="linepst3 lines">&nbsp;</div>
+      <p class="local">Local</p>
+      <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+      <p class="dt">Data</p>
+      <div class="space">&nbsp;</div>
+      <p class="med">Médico Assistente</p>
+      <p class="paci">Paciente ou Responsável</p>
+    </div>
+    <div class="divfotter">
+      <p class="txtftt">
+        *Este conjunto de normas de conduta de segurança foi elaborado pela
+        Câmara Técnica de Cirurgia Plástica do Consellho Federal de Medicina
+        (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011.
+      </p>
+      <p class="numerador">Pag. 1</p>
+    </div>
+
+    <div class="brkpg">
+      <br />
+      <!-- ACABOU FIRST PAGE-->
+    </div>
+    <!-- Inicio 2 PAGE-->
+    <p class="titulo">
+      Normas Informativas E Compartilhada em Cirurgia Plástica*
+    </p>
+    <div class="divhead">
+      <div class="linepst lines">&nbsp;</div>
+      <div class="lines linepst2">&nbsp;</div>
+      <p class="fundo">Médico</p>
+      <p class="fundo">CRM</p>
+      <p class="fundo">Paciente</p>
+      <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+      <p class="fundo">Data de Nascimento</p>
+      <p class="fundo">Local de Atendimento</p>
+    </div>
+    <div class="namepg">FASE PRÉ - OPERATÓRIO</div>
+    <div class="divpage1"></div>
+    <div class="divupfotter">
+      <div class="linepst3 lines">&nbsp;</div>
+      <p class="local">Local</p>
+      <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+      <p class="dt">Data</p>
+      <div class="space">&nbsp;</div>
+      <p class="med">Médico Assistente</p>
+      <p class="paci">Paciente ou Responsável</p>
+    </div>
+    <div class="divfotter">
+      <p class="txtftt">
+        *Este conjunto de normas de conduta de segurança foi elaborado pela
+        Câmara Técnica de Cirurgia Plástica do Consellho Federal de Medicina
+        (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011.
+      </p>
+      <p class="numerador">Pag. 2</p>
+    </div>
+    <div class="brkpg"><br /></div>
+    <!-- Inicio 3 PAGE-->
+    <p class="titulo">
+      Normas Informativas E Compartilhada em Cirurgia Plástica*
+    </p>
+    <div class="divhead">
+      <div class="linepst lines">&nbsp;</div>
+      <div class="linepst2 lines">&nbsp;</div>
+      <p class="fundo">Médico</p>
+      <p class="fundo">CRM</p>
+      <p class="fundo">Paciente</p>
+      <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+      <p class="fundo">Data de Nascimento</p>
+      <p class="fundo">Local de Atendimento</p>
+    </div>
+    <div class="namepg">FASE TRANS - OPERATÓRIO</div>
+    <div class="divpage1"></div>
+    <div class="divupfotter">
+      <div class="linepst3 lines">&nbsp;</div>
+      <p class="local">Local</p>
+      <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+      <p class="dt">Data</p>
+      <div class="space">&nbsp;</div>
+      <p class="med">Médico Assistente</p>
+      <p class="paci">Paciente ou Responsável</p>
+    </div>
+    <div class="divfotter">
+      <p class="txtftt">
+        *Este conjunto de normas de conduta de segurança foi elaborado pela
+        Câmara Técnica de Cirurgia Plástica do Consellho Federal de Medicina
+        (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011.
+      </p>
+      <p class="numerador">Pag. 3</p>
+    </div>
+    <div class="brkpg"><br /></div>
+    <!-- Inicio 4 PAGE-->
+    <p class="titulo">
+      Normas Informativas E Compartilhada em Cirurgia Plástica*
+    </p>
+    <div class="divhead">
+      <div class="linepst lines">&nbsp;</div>
+      <div class="linepst2 lines">&nbsp;</div>
+      <p class="fundo">Médico</p>
+      <p class="fundo">CRM</p>
+      <p class="fundo">Paciente</p>
+      <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+      <p class="fundo">Data de Nascimento</p>
+      <p class="fundo">Local de Atendimento</p>
+    </div>
+    <div class="namepg">FASE PÓS - OPERATÓRIO</div>
+    <div class="divpage1"></div>
+    <div class="divupfotter">
+      <div class="linepst3 lines">&nbsp;</div>
+      <p class="local">Local</p>
+      <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+      <p class="dt">Data</p>
+      <div class="space">&nbsp;</div>
+      <p class="med">Médico Assistente</p>
+      <p class="paci">Paciente ou Responsável</p>
+    </div>
+    <div class="divfotter">
+      <p class="txtftt">
+        *Este conjunto de normas de conduta de segurança foi elaborado pela
+        Câmara Técnica de Cirurgia Plástica do Consellho Federal de Medicina
+        (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011.
+      </p>
+      <p class="numerador">Pag. 4</p>
+    </div>
+  </div>
+</body>
