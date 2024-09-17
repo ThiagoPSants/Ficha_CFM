@@ -115,12 +115,13 @@
             grid-template-areas: 'pa1' 'pa2' 'pa4' 'pa5' 'pa6' 'pa7' 'pa8' 'pa9';
         }
 
-.pa1{ grid-area: pa1;
+.pa1{ 
+     grid-area: pa1;
      font-family: arial;
-        font-size:7pt;
-        display: grid;
-        grid-template-areas:'l1 l1 l1 l1' 
-                            'l2 l2 l3 l3'
+     font-size:7pt;
+     display: grid;
+     grid-template-areas:'l1 l1 l1 l1' 
+                         'l2 l2 l3 l3'
                             'l4 l4 l4 l4'
                             'l5 l6 l7 l7'
                             'l8 l8 l9 l9'
@@ -199,6 +200,9 @@
         display: grid;                  
         border:  solid red 2px;
         height: 10%;
+        text-align: justify;
+        display: grid;
+        grid-template-areas: '';
         
         }
 .pa3{ 
@@ -219,47 +223,61 @@ grid-area: pa4;
         height: 11%;
         
 }
-.pa5{ grid-area: pa5;
-     font-family: arial;
+.pa5{ 
+       grid-area: pa5;
+       font-family: arial;
         font-size:8pt;
         display: grid;                  
         border:  solid red 2px;
         height: 7%;
         
 }
-.pa6{ grid-area: pa6;
-     font-family: arial;
+.pa6{ 
+        grid-area: pa6;
+        font-family: arial;
         font-size:8pt;
         display: grid;                  
         border:  solid red 2px;
         height: 7%;
         
 }
-.pa7{ grid-area: pa7;
-     font-family: arial;
+.pa7{ 
+        grid-area: pa7;
+        font-family: arial;
         font-size:8pt;
         display: grid;                  
         border:  solid red 2px;
         height: 7%;
         
         }
-.pa8{ grid-area: pa8;
-     font-family: arial;
+.pa8{ 
+        grid-area: pa8;
+        font-family: arial;
         font-size:8pt;
         display: grid;                  
         border:  solid red 2px;
         height: 11%;
         
         }
-.pa9{ grid-area: pa9;
-     font-family: arial;
+.pa9{ 
+        grid-area: pa9;
+        font-family: arial;
         font-size:8pt;
         display: grid;                  
         border:  solid red 2px;
         height: 7%;
         
         }
+.fundo{ 
+        width: max-content;    
+        background-color: white;
+        border-right:solid 10px white; 
+}
+.topic{ 
+        border: solid black 3px;
+        font-weight: bold;
 
+}
 
 
      /* Css do rodapé  */   
@@ -426,12 +444,12 @@ grid-area: pa4;
                 <p class="l17">UF:</p>      
             </div>
             <div class="pa2">
-                  <p> B) PATOLOGIA / INDICAÇÃO </p>
-                  <p>1) Anamnase </p> 
+                  <p class=" l fundo topic "> B) PATOLOGIA / INDICAÇÃO </p>
+                  <p class=" fundo topic ">1) Anamnase </p> 
                   <p> Geral Específica </p> 
-                  <p> 2) Antecedentes </p> 
+                  <p class=" fundo topic "> 2) Antecedentes </p> 
                   <p>Referidos </p> 
-                  <p>Pesquisados Tabagismo Alergia Tratamento Clínico Psiquiátrico </p> 
+                  <p>Pesquisados <input type="checkbox"> Tabagismo<input type="checkbox"> Alergia Tratamento <input type="checkbox"> Clínico Psiquiátrico<input type="checkbox"> </p> 
                   <p>Uso de Medicamentos </p> 
                      
                 </div>
@@ -456,8 +474,7 @@ grid-area: pa4;
              <div class="pa9">
              <p>UF: </p>   
              </div>     
-        </div> 
-  <!-- RODAPÉ BEBÊ-->        
+        </div>         
         <div class="divupfotter">
             <div class="linep3">&nbsp;</div>
             <p class="local">Local</p>
@@ -505,5 +522,63 @@ grid-area: pa4;
             <p class="numerador">Pag. 2</p>
          </div>
       <div class="brkpg"> <br></div>
+<!-- Inicio 3 PAGE-->
+<p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
+<div class="divhead">
+    <div class="linep1">&nbsp;</div>
+    <div class="linep2">&nbsp;</div>
+    <p class="p1">Médico </p>
+    <p class="p2">CRM</p>
+    <p class="p4">Paciente </p>
+    <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+    <p class="p5">Data de Nascimento</p> 
+    <p class="p3">Local de Atendimento</p>
+</div> 
+<div class="namepg"> FASE TRANS - OPERATÓRIO</div>   
+<div class="divpage1"></div>   
+<div class="divupfotter">
+    <div class="linep3">&nbsp;</div>
+    <p class="local">Local</p>
+    <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+    <p class="dt">Data</p>
+    <div class="space">&nbsp;</div>
+    <p class=" med">Médico Assistente</p> 
+    <p class="paci">Paciente ou Responsável</p> 
+</div>  
+ <div class="divfotter">
+<p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
+    Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
+    <p class="numerador">Pag. 3</p>
+ </div>
+<div class="brkpg"> <br></div>
+<!-- Inicio 4 PAGE-->
+<p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
+<div class="divhead">
+    <div class="linep1">&nbsp;</div>
+    <div class="linep2">&nbsp;</div>
+    <p class="p1">Médico </p>
+    <p class="p2">CRM</p>
+    <p class="p4">Paciente </p>
+    <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+    <p class="p5">Data de Nascimento</p> 
+    <p class="p3">Local de Atendimento</p>
+</div> 
+<div class="namepg"> FASE PÓS - OPERATÓRIO</div>   
+<div class="divpage1"></div>   
+<div class="divupfotter">
+    <div class="linep3">&nbsp;</div>
+    <p class="local">Local</p>
+    <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+    <p class="dt">Data</p>
+    <div class="space">&nbsp;</div>
+    <p class=" med">Médico Assistente</p> 
+    <p class="paci">Paciente ou Responsável</p> 
+</div>  
+ <div class="divfotter">
+<p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
+    Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
+    <p class="numerador">Pag. 4</p>
+ </div>
+<div class="brkpg"> <br></div>
     </div>
 </Body>
