@@ -43,64 +43,41 @@
             margin-left: auto; 
             margin-right: auto;
             display: grid;
-            grid-template-areas: 'p1 p2''p3 p3' ;
+            grid-template-areas: 'fundo fundo''fundo fundo' ;
             padding: 5px;
             
     }
-        
-.linep1{
-        z-index: 0;
-        position: absolute;
+.lines{ 
         border: solid 2px black;
-        border-left-color: white;
-        border-right-color: white;    
-        width: 99%;
-        margin-top: 13px;
-        margin-left: 6px;
-        }  
-.linep2{
         z-index: 0;
         position: absolute;
-        border-bottom: solid 2px black;
         border-left-color: white;
         border-right-color: white;
-        width: 99%;
+        width: 99%; 
+
+}    
+        
+.linepst{
+        z-index: 1;
+        margin-top: 13px;
+        margin-left: 6px;
+        
+        }  
+.linepst2{ 
+        z-index: 0;
         margin-top: 33px;
-        margin-left: 6px;    
+        margin-left: 6px;
+        border-top-color: white;
         
         }
-.p1{ 
+.fundo{ 
         z-index: 2;
         width: max-content;    
         background-color: white;
         border-right:solid 10px white; 
-    
-        }        
-.p2{
-        z-index: 2;
-        width: max-content ;
-        background-color: white;
-        border-right:solid 10px white;
+}        
+
         
-        }
-.p3{
-        z-index: 2;
-        width: max-content;
-        background-color: white;
-        border-right:solid 10px white;
-        }  
-.p4{
-        z-index: 2;
-        width: max-content;
-        background-color: white;
-        border-right:solid 10px white;
-        }   
-.p5{
-        z-index: 2;
-        width: max-content;
-        background-color: white;
-        border-right:solid 10px white;
-        }         
     
             
     /* Css do Corpo  */
@@ -111,10 +88,9 @@
             margin-left: auto; 
             margin-right: auto;
             height: 750px;
-        
             grid-template-areas: 'pa1' 'pa2' 'pa4' 'pa5' 'pa6' 'pa7' 'pa8' 'pa9';
         }
-
+      
 .pa1{ 
      grid-area: pa1;
      font-family: arial;
@@ -122,13 +98,12 @@
      display: grid;
      grid-template-areas:'l1 l1 l1 l1' 
                          'l2 l2 l3 l3'
-                            'l4 l4 l4 l4'
-                            'l5 l6 l7 l7'
-                            'l8 l8 l9 l9'
-                            'l10 l11 l12 l13'
-                            'l14 l14 l14 l14'
-                            'l15 l16 l16 l17'
-                            ;                    
+                        'l4 l4 l4 l4'
+                        'l5 l6 l7 l7'
+                        'l8 l8 l9 l9'
+                        'l10 l11 l12 l13'
+                        'l14 l14 l14 l14'
+                        'l15 l16 l16 l17';                    
         border:  solid green 2px;
         row-gap: 3px;
         height: 15%;
@@ -268,11 +243,7 @@ grid-area: pa4;
         height: 7%;
         
         }
-.fundo{ 
-        width: max-content;    
-        background-color: white;
-        border-right:solid 10px white; 
-}
+
 .topic{ 
         border: solid black 3px;
         font-weight: bold;
@@ -297,16 +268,12 @@ grid-area: pa4;
             padding: 10px;
          }
 
-.linep3{
-        z-index: 0;
-        position: absolute;
-        border: solid 2px black;
-        border-left-color: white;
-        border-right-color: white;    
+.linepst3{   
         width: 90%;
         height: 25px;
         margin-top: 20px;
         margin-left: 50px;
+        
 
          }
 .local{
@@ -400,7 +367,6 @@ grid-area: pa4;
   margin-left: 80%;
     }
 
-
 .barraftt{
   position: absolute;
   margin-top: 2px;
@@ -417,10 +383,10 @@ grid-area: pa4;
     <div class="divpages">
         <p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
         <div class="divhead">
-            <div class="linep1">&nbsp;</div>
-            <p class="p1">Médico </p>
-            <p class="p2">CRM</p>
-            <p class="p3">Local de Atendimento</p>
+            <div class="linepst lines">&nbsp;</div>
+            <p class="fundo">Médico </p>
+            <p class="fundo">CRM</p>
+            <p class="fundo">Local de Atendimento</p>
         </div> 
         <div class="namepg"> FASE AMBULATORIAL: CONSULTA E AVALIAÇÃO PRÉ - OPERATÓRIA</div>  
         <div class="divpage1">
@@ -444,7 +410,7 @@ grid-area: pa4;
                 <p class="l17">UF:</p>      
             </div>
             <div class="pa2">
-                  <p class=" l fundo topic "> B) PATOLOGIA / INDICAÇÃO </p>
+                  <p class=" fundo topic "> B) PATOLOGIA / INDICAÇÃO </p>
                   <p class=" fundo topic ">1) Anamnase </p> 
                   <p> Geral Específica </p> 
                   <p class=" fundo topic "> 2) Antecedentes </p> 
@@ -476,7 +442,7 @@ grid-area: pa4;
              </div>     
         </div>         
         <div class="divupfotter">
-            <div class="linep3">&nbsp;</div>
+            <div class="linepst3 lines">&nbsp;</div>
             <p class="local">Local</p>
             <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
             <p class="dt">Data</p>
@@ -496,19 +462,19 @@ grid-area: pa4;
 <!-- Inicio 2 PAGE-->
      <p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
         <div class="divhead">
-            <div class="linep1">&nbsp;</div>
-            <div class="linep2">&nbsp;</div>
-            <p class="p1">Médico </p>
-            <p class="p2">CRM</p>
-            <p class="p4">Paciente </p>
+            <div class="linepst lines">&nbsp;</div>
+            <div class="  lines linepst2">&nbsp;</div>
+            <p class="fundo">Médico </p>
+            <p class="fundo">CRM</p>
+            <p class="fundo">Paciente </p>
             <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-            <p class="p5">Data de Nascimento</p> 
-            <p class="p3">Local de Atendimento</p>
+            <p class="fundo">Data de Nascimento</p> 
+            <p class="fundo">Local de Atendimento</p>
         </div> 
         <div class="namepg"> FASE PRÉ - OPERATÓRIO</div>   
         <div class="divpage1"></div>   
         <div class="divupfotter">
-            <div class="linep3">&nbsp;</div>
+            <div class="linepst3 lines">&nbsp;</div>
             <p class="local">Local</p>
             <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
             <p class="dt">Data</p>
@@ -523,62 +489,61 @@ grid-area: pa4;
          </div>
       <div class="brkpg"> <br></div>
 <!-- Inicio 3 PAGE-->
-<p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
-<div class="divhead">
-    <div class="linep1">&nbsp;</div>
-    <div class="linep2">&nbsp;</div>
-    <p class="p1">Médico </p>
-    <p class="p2">CRM</p>
-    <p class="p4">Paciente </p>
-    <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-    <p class="p5">Data de Nascimento</p> 
-    <p class="p3">Local de Atendimento</p>
-</div> 
-<div class="namepg"> FASE TRANS - OPERATÓRIO</div>   
-<div class="divpage1"></div>   
-<div class="divupfotter">
-    <div class="linep3">&nbsp;</div>
-    <p class="local">Local</p>
-    <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-    <p class="dt">Data</p>
-    <div class="space">&nbsp;</div>
-    <p class=" med">Médico Assistente</p> 
-    <p class="paci">Paciente ou Responsável</p> 
-</div>  
- <div class="divfotter">
-<p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
-    Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
-    <p class="numerador">Pag. 3</p>
- </div>
-<div class="brkpg"> <br></div>
+        <p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
+        <div class="divhead">
+        <div class="linepst lines">&nbsp;</div>
+     <div class="linepst2 lines">&nbsp;</div>
+      <p class="fundo">Médico </p>
+     <p class="fundo">CRM</p>
+     <p class="fundo">Paciente </p>
+     <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+     <p class="fundo">Data de Nascimento</p> 
+     <p class="fundo">Local de Atendimento</p>
+     </div> 
+     <div class="namepg"> FASE TRANS - OPERATÓRIO</div>   
+     <div class="divpage1"></div>   
+     <div class="divupfotter">
+     <div class="linepst3 lines">&nbsp;</div>
+     <p class="local">Local</p>
+     <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+     <p class="dt">Data</p>
+     <div class="space">&nbsp;</div>
+     <p class=" med">Médico Assistente</p> 
+     <p class="paci">Paciente ou Responsável</p> 
+     </div>  
+     <div class="divfotter">
+     <p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
+     Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
+     <p class="numerador">Pag. 3</p>
+      </div>
+     <div class="brkpg"> <br></div>
 <!-- Inicio 4 PAGE-->
-<p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
-<div class="divhead">
-    <div class="linep1">&nbsp;</div>
-    <div class="linep2">&nbsp;</div>
-    <p class="p1">Médico </p>
-    <p class="p2">CRM</p>
-    <p class="p4">Paciente </p>
-    <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-    <p class="p5">Data de Nascimento</p> 
-    <p class="p3">Local de Atendimento</p>
-</div> 
-<div class="namepg"> FASE PÓS - OPERATÓRIO</div>   
-<div class="divpage1"></div>   
-<div class="divupfotter">
-    <div class="linep3">&nbsp;</div>
-    <p class="local">Local</p>
-    <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-    <p class="dt">Data</p>
-    <div class="space">&nbsp;</div>
-    <p class=" med">Médico Assistente</p> 
-    <p class="paci">Paciente ou Responsável</p> 
-</div>  
- <div class="divfotter">
-<p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
-    Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
-    <p class="numerador">Pag. 4</p>
+     <p class="titulo">Normas Informativas E Compartilhada em Cirurgia Plástica*</p>
+     <div class="divhead">
+     <div class="linepst lines">&nbsp;</div>
+     <div class="linepst2 lines">&nbsp;</div>
+     <p class="fundo">Médico </p>
+     <p class="fundo">CRM</p>
+     <p class="fundo">Paciente </p>
+     <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+     <p class="fundo">Data de Nascimento</p> 
+     <p class="fundo">Local de Atendimento</p>
+     </div> 
+     <div class="namepg"> FASE PÓS - OPERATÓRIO</div>   
+     <div class="divpage1"></div>   
+     <div class="divupfotter">
+     <div class="linepst3 lines">&nbsp;</div>
+     <p class="local">Local</p>
+     <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+     <p class="dt">Data</p>
+     <div class="space">&nbsp;</div>
+     <p class=" med">Médico Assistente</p> 
+     <p class="paci">Paciente ou Responsável</p> 
+     </div>  
+     <div class="divfotter">
+     <p class="txtftt">*Este conjunto de normas de conduta de segurança foi elaborado pela Câmara Técnica de Cirurgia Plástica do
+     Consellho Federal de Medicina (CFM) , tendo sido aprovado pelo plenário da entidade em abril de 2011. </p>
+     <p class="numerador">Pag. 4</p>
+     </div>
  </div>
-<div class="brkpg"> <br></div>
-    </div>
 </Body>
