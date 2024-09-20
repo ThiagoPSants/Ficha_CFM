@@ -20,6 +20,7 @@
       font-weight: bold;
       margin-left: auto;
       margin-right: auto;
+      padding: 2px;
     }
     .titulo {
       font-size: 15pt;
@@ -28,7 +29,7 @@
       font-weight: bold;
     }
 
-    /* Css da linha sem ser o '--'*/
+    
     .divhead {
       position: relative;
       border: solid green 2px;
@@ -38,51 +39,85 @@
       margin-left: auto;
       margin-right: auto;
       display: grid;
-      grid-template-areas: "fundo fundo" "fundo fundo";
-      padding: 5px;
+      grid-template-areas: "l2 l3" "l4 l4";
+      height: 60px;
+      align-items: center;
+   
     }
-    .lines {
-      border: solid 2px black;
+/* Css da linha sem ser o '--'*/
+     .lines {
       z-index: 0;
       position: absolute;
-      border-left-color: white;
-      border-right-color: white;
+      border: 2px solid black;
       width: 99%;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent; 
     }
 
+    .border {
+  border-image: linear-gradient(to top,white 98%, black 99%)1;
+  border-width: 4px;
+  border-style: solid;
+  padding: 3px;
+  border-bottom: transparent;
+  border-left-color:transparent;
+  border-right-color:transparent ;
+}
+/* Position das  linhas */
     .linepst {
-      z-index: 1;
-      margin-top: 13px;
-      margin-left: 6px;
+      margin-top: -10px;
+
+    }
+    .linepst1 {
+      margin-top: 50px;
+      
     }
     .linepst2 {
-      z-index: 0;
-      margin-top: 33px;
-      margin-left: 6px;
-      border-top-color: white;
-      width: 98%;
+      margin-top: -10px;
     }
-    
+
+    .linepst3 {
+      margin-top: 28px;
+    }
+
     .linepst4 {
-      z-index: 0;
-      margin-top: 76px;
-      margin-left: 6px;
-      height: 40px;
-      width: 98%;
+      margin-top: 67px;
     }
 
     .linepst5 {
-     z-index: 0;
-      margin-left: 6px;
-      height: 40px;
-      width: 98%;
-      border-top-color: white;
-    }
-    .fundo {
-      z-index: 2;
+      margin-top: -35px;
+  }   
+  .linepst6 {
+      margin-top: 35px;
+  }  
+  .linepst7 {
+      margin-top: 118px;
+  } 
+  .linepst8 {
+      margin-top: 38px;
+  } 
+  .linepst9 {
+      margin-top: 10px;
+    
+  } 
+  .linepst10 {
+      margin-top: 62px;
+    
+  } 
+  .linehead{
+      z-index: 0;
+      position: absolute;
+      width: 99%;
+      margin-top: 74px;
+    
+  }       
+  .fundo {
+      z-index: 1;
       width: max-content;
       background-color: white;
-      border-right: solid 10px white;
+      border-right: solid 5px white;
+      border-top-color: solid 1px transparent;
     }
 
     /* Css do Corpo  */
@@ -95,13 +130,38 @@
       height: 750px;
       grid-template-areas: "pa1" "pa2" "pa4" "pa5" "pa6" "pa7" "pa8" "pa9";
     }
-.pas{position: relative;
-     font-family: arial;
+    
+
+    .pas {
+      z-index: 2;
+      position: relative;
+      font-family: arial;
       font-size: 8pt;
       display: grid;
-      border: solid green 2px;
+      border: solid transparent  1px;
+      overflow: hidden;
+      align-items: center;
+      text-align: justify;
+    }
 
-}
+    .divpage2 {
+      border: solid green 2px;
+      display: grid;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 750px;
+      grid-template-areas: "pa10" "pa11" "pa12" "pa13";
+    }
+    .pas2 {
+      position: relative;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid transparent  1px;
+      overflow: hidden;
+      border: solid 2px black;
+    }
     .pa1 {
       grid-area: pa1;
       grid-template-areas:
@@ -113,10 +173,153 @@
         "l10 l11 l12 l13"
         "l14 l14 l14 l14"
         "l15 l16 l16 l17";
-      row-gap: 3px;
-      height: 17%;
+       row-gap: 3px;
+      height: 20%;
     }
 
+    .pa2 {
+      grid-area: pa2;
+      border: solid green 2px;
+      height: 17%;
+      grid-template-areas:
+        "l1 l1 l1 l1 l1"
+        "l2 l2 l2 l2 l2"
+        "l3 l3 .  l4 l4"
+        "l5 l5 l5 l5 l5"
+        "l6 l6 l6 l6 l6"
+        "l7 l8 l9 l10 l11"
+        "l12 l12 l12 l12 l12";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    .pa3 {
+      grid-area: pa3;
+      border: solid green 2px;
+      height: 7%;
+      grid-template-areas:
+        "l1 l1"
+        "l2 l3";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    .pa4 {
+      grid-area: pa4;
+      border: solid green 2px;
+      height: 8%;
+      grid-template-areas:
+        "l1 l1"
+        "l2 l3"
+        "l4 l5";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    .pa5 {
+      grid-area: pa5;
+      border: solid green 2px;
+      height: 8%;
+      grid-template-areas:
+        "l1 l1"
+        "l2 l3"
+        "l4 l5";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    .pa6 {
+      grid-area: pa6;
+      border: solid green 2px;
+      height: 8%;
+      grid-template-areas:
+        "l1 l1"
+        "l2 l3"
+        "l4 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    .pa7 {
+      grid-area: pa7;
+      border: solid green 2px;
+      height: 7%;
+      grid-template-areas:
+        "l1 l1"
+        "l2 l3";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    .pa8 {
+      grid-area: pa8;
+      border: solid green 2px;
+      height: 10%;
+      grid-template-areas:
+        "l1 l1 l1 l1"
+        "l2 l3 l4 l5"
+        "l6 l6 l6 l6";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    .pa9 {
+      grid-area: pa9;
+      border: solid green 2px;
+      height: 7%;
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    .pa10 {
+      grid-area: pa10;
+      border: solid green 2px;
+      height: 50%; 
+      grid-template-areas:
+        "l1 l1"
+        "l2";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      
+    }
+    .pa11 {
+      grid-area: pa11;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+    .pa12 {
+      grid-area: pa12;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }    
+    .pa13 {
+      grid-area: pa13;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    /* paths das areas*/
     .l1 {
       font-weight: bold;
       grid-area: l1;
@@ -170,91 +373,8 @@
     .l17 {
       grid-area: l17;
     }
-    
-    .pa2 {
-      position: relative;  
-      grid-area: pa2;
-      font-family: arial;
-      font-size: 8pt;
-      display: grid;
-      border: solid green 2px;
-      height: 17%;
-      text-align: justify;
-      grid-template-areas: "l1 l1 l1 l1 l1" 
-                           "l2 l2 l2 l2 l2"
-                           "l3 l3 .  l4 l4"
-                           "l5 l5 l5 l5 l5"
-                           "l6 l6 l6 l6 l6"
-                           "l7 l8 l9 l10 l11"
-                           "l12 l12 l12 l12 l12"
-                           ;                     
-    }
-    .pa3 {
-      grid-area: pa3;
-      font-family: arial;
-      font-size: 8pt;
-      display: grid;
-      border: solid red 2px;
-      height: 7%;
-    }
-    .pa4 {
-      grid-area: pa4;
-      font-family: arial;
-      font-size: 8pt;
-      display: grid;
-      border: solid red 2px;
-      height: 11%;
-    }
-    .pa5 {
-      grid-area: pa5;
-      font-family: arial;
-      font-size: 8pt;
-      display: grid;
-      border: solid red 2px;
-      height: 7%;
-    }
-    .pa6 {
-      grid-area: pa6;
-      font-family: arial;
-      font-size: 8pt;
-      display: grid;
-      border: solid red 2px;
-      height: 7%;
-    }
-    .pa7 {
-      grid-area: pa7;
-      font-family: arial;
-      font-size: 8pt;
-      display: grid;
-      border: solid red 2px;
-      height: 7%;
-    }
-    .pa8 {
-      grid-area: pa8;
-      font-family: arial;
-      font-size: 8pt;
-      display: grid;
-      border: solid red 2px;
-      height: 11%;
-    }
-    .pa9 {
-      grid-area: pa9;
-      font-family: arial;
-      font-size: 8pt;
-      display: grid;
-      border: solid red 2px;
-      height: 7%;
-    }
 
-    .topic {
-    font-weight: bold;
-    }
-.brkcontent{
-    width: auto;
-    align-items: center;
-    border: solid 1px black;
-    text-align: justify;
-}    
+  
 
     /* Css do rodapé  */
     .divupfotter {
@@ -273,7 +393,8 @@
       padding: 10px;
     }
 
-    .linepst3 {
+    .linefotter {
+      border-bottom-color: black ;
       width: 90%;
       height: 25px;
       margin-top: 20px;
@@ -339,6 +460,14 @@
     }
 
     /* Configurações gerais */
+    .topic {
+      font-weight: bold;
+    }
+    .brkcontent {
+      width: auto;
+      align-items: center;
+      text-align: justify;
+    }
 
     .numerador {
       grid-area: numerador;
@@ -351,11 +480,12 @@
     }
     .barrahead {
       position: absolute;
-      margin-top: 14px;
+      margin-top: -8px;
       margin-left: auto;
       font-size: 17pt;
       align-items: end;
       margin-left: 80%;
+      text-align: end;
     }
 
     .barraftt {
@@ -366,10 +496,16 @@
       align-items: end;
       margin-left: 80%;
     }
-input[type="checkbox"]{
-    width: 20px;
-    height: 20px;
-}      
+    .barrapst{
+      position: absolute;
+      margin-top: 46px;
+      font-size: 13pt;
+      
+    }
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+    }
   </style>
 
   <!-- Inicio do Code-->
@@ -378,16 +514,19 @@ input[type="checkbox"]{
       Normas Informativas E Compartilhada em Cirurgia Plástica*
     </p>
     <div class="divhead">
-      <div class="linepst lines">&nbsp;</div>
-      <p class="fundo">Médico</p>
-      <p class="fundo">CRM</p>
-      <p class="fundo">Local de Atendimento</p>
+      <div class="linepst lines border"></div>
+      <div class="linepst1 lines border"></div>
+      <p class="l2 fundo">Médico</p>
+      <p class="l3 fundo">CRM</p>
+      <p class="l4 fundo">Local de Atendimento</p>
     </div>
-    <div class="namepg">FASE AMBULATORIAL: CONSULTA E AVALIAÇÃO PRÉ - OPERATÓRIA
+    <div class="namepg">
+      FASE AMBULATORIAL: CONSULTA E AVALIAÇÃO PRÉ - OPERATÓRIA
     </div>
     <div class="divpage1">
       <div class="pa1 pas">
-        <p class="l1 topic fundo">A)IDENTIFICAÇÃO DO PACIENTE</p>
+        <div class="linehead border"></div>
+        <p class="l1 topic fundo brkcontent">A)IDENTIFICAÇÃO DO PACIENTE</p>
         <p class="l2">Nome:%nome_paciente%</p>
         <p class="l3">Nº de Registro: %registro_paciente%</p>
         <p class="l4">
@@ -399,10 +538,10 @@ input[type="checkbox"]{
         <p class="l7">E-Mail:</p>
         <p class="l8">Telefone:%fone1_paciente%</p>
         <p class="l9">Celular:%fone2_paciente%</p>
-        <p class="l10">RG:%rg_paciente%</p>
-        <p class="l11">Emissor</p>
-        <p class="l12">Data Emissão</p>
-        <p class="l13">Sexo: %sexo_paciente%</p>
+        <p class="l10 fundo brkcontent">RG:%rg_paciente%</p>
+        <p class="l11 fundo">Emissor</p>
+        <p class="l12 fundo">Data Emissão</p>
+        <p class="l13 fundo brkcontent">Sexo: %sexo_paciente%</p>
         <p class="l14">CIC / CPF: %cpf_paciente%</p>
         <p class="l15">Data de Nascimento:%nascimento_paciente%</p>
         <p class="l16">Local de Nascimento: %pais_nascimento%</p>
@@ -410,44 +549,76 @@ input[type="checkbox"]{
       </div>
       <div class="pa2 pas">
         <p class="fundo topic l1">B) PATOLOGIA / INDICAÇÃO</p>
-        <p class="fundo topic  l2">1) Anamnase</p>
-        <div class="lines linepst4">&nbsp;</div>
-        <p class="fundo l3 ">Geral</p>
-        <p class="fundo l4 ">Específica</p>
+        <div class="lines linepst5 border"></div>
+        <p class="fundo topic l2">1) Anamnase</p>
+        <p class="fundo l3">Geral</p>
+        <p class="fundo l4">Específica</p>
         <p class="fundo l5 topic">2) Antecedentes</p>
-        <p class="fundo l6 " >Referidos</p>
-        <p class="fundo l7">Pesquisados <input type="checkbox"/></p> 
-        <p class="fundo l8">Tabagismo <input type="checkbox"/></p> 
-        <p class="fundo l9">Alergia <input type="checkbox" /></p> 
+        <p class="fundo l6">Referidos</p>
+        <div class="lines linepst6"></div>
+        <p class="fundo l7">Pesquisados <input type="checkbox" /></p>
+        <p class="fundo l8">Tabagismo <input type="checkbox" /></p>
+        <p class="fundo l9">Alergia <input type="checkbox"  /></p>
         <p class="fundo l10">Clínico Tratamento <input type="checkbox" /></p>
         <p class="fundo l11">Psiquiátrico <input type="checkbox" /></p>
-        <div class="lines linepst5"> &nbsp;</div>
-        <p class="fundo l12 ">Uso de Medicamentos</p>
+        <div class="lines linepst7 border"></div>
+        <p class="fundo l12">Uso de Medicamentos</p>
       </div>
       <div class="pa3 pas">
-        <p>UF:</p>
+        <p class="fundo l1 topic">C) COMPARTILHAMENTO COM OUTRA ESPECIALIDADE CIRÚRGICA</p>
+        <div class="lines linepst8 border"></div>
+        <p class="fundo l2"><input type="checkbox" /> Mesma área anatômica</p>
+        <p class="fundo l3">&nbsp;<input type="checkbox" /> Outra área anatômica</p>
       </div>
-      <div class="pa4">
-        <p>UF:</p>
+      <div class="pa4 pas">
+        <p class="fundo l1 topic">D) Esclarecimento / Discussão do Caso: Plano Cirúrgico Proposto</p>
+        <div class="lines linepst9 border"></div>
+        <p class="fundo l2">&nbsp;<input type="checkbox" /> Das Técnicas</p>
+        <p class="fundo l3">&nbsp;<input type="checkbox" /> Dos Riscos</p>
+        <div class="lines linepst10">&nbsp;</div>
+        <p class="fundo l4">&nbsp;<input type="checkbox" /> Das Cicatrizes</p>
+        <p class="fundo l5">&nbsp;<input type="checkbox" /> Do Pós Operatório Imediato / Mediato</p>
       </div>
-      <div class="pa5">
-        <p>UF:</p>
+      <div class="pa5 pas">
+        <p class="fundo l1 topic">E) Exames Pré - Operatórios</p>
+        <div class="lines linepst9 border"></div>
+        <p class="fundo l2">&nbsp;<input type="checkbox" />Gerais</p>
+        <p class="fundo l3">&nbsp;<input type="checkbox" /> Específicos</p>
+        <div class="lines linepst10 border">&nbsp;</div>
+        <p class="fundo l4">&nbsp;<input type="checkbox" /> Outros</p>
+        <p class="fundo l5">&nbsp;<input type="checkbox" /> Parecer Risco Cirúrgico</p>
       </div>
-      <div class="pa6">
-        <p>UF:</p>
+      <div class="pa6 pas">
+        <p class="fundo l1 topic">F) Consulta Pré - Anestesica (SBA)</p>
+        <div class="lines linepst9 border"></div>
+        <p class="fundo l2">&nbsp;<input type="checkbox" />Indicada</p>
+        <p class="fundo l3">&nbsp;<input type="checkbox" /> Encaminhada</p>
+        <div class="lines linepst10 border">&nbsp;</div>
+        <p class="fundo l4">&nbsp;<input type="checkbox" /> Prescrição Especial</p>
       </div>
-      <div class="pa7">
-        <p>UF:</p>
+      <div class="pa7 pas">
+        <p class="fundo l1 topic">G) Do Cirurgião</p>
+        <div class="lines linepst6 border"></div>
+        <p class="fundo l2"><input type="checkbox" /> Especialista AMB (SBCP)</p>
+        <p class="fundo l3">&nbsp;<input type="checkbox" /> Título da CNRM</p>
       </div>
-      <div class="pa8">
-        <p>UF:</p>
+      <div class="pa8 pas">
+        <p class="fundo l1 topic">H) Do Hospital</p>
+        <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Hospital Geral </p>
+        <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Hospital Especializado </p>
+        <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;Clínca Especializada </p>
+        <p class="fundo l5">&nbsp;<input type="checkbox" />&nbsp;Hospital Dia </p>
+        <p class="fundo l6">&nbsp;<input type="checkbox" />&nbsp;Registros CRM / SMS (Secretária Municipal da Saúde) </p>
       </div>
-      <div class="pa9">
-        <p>UF:</p>
+      <div class="pa9 pas">
+        <p class="fundo l1 topic">I) Instrumental Específico</p>
+        <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+        <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+        <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
       </div>
     </div>
     <div class="divupfotter">
-      <div class="linepst3 lines">&nbsp;</div>
+      <div class="linefotter lines border"></div>
       <p class="local">Local</p>
       <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="dt">Data</p>
@@ -473,19 +644,43 @@ input[type="checkbox"]{
       Normas Informativas E Compartilhada em Cirurgia Plástica*
     </p>
     <div class="divhead">
-      <div class="linepst lines">&nbsp;</div>
       <div class="lines linepst2">&nbsp;</div>
+      <div class="lines linepst3">&nbsp;</div>
       <p class="fundo">Médico</p>
       <p class="fundo">CRM</p>
       <p class="fundo">Paciente</p>
+      <div class="lines linepst4">&nbsp;</div>
       <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="fundo">Data de Nascimento</p>
       <p class="fundo">Local de Atendimento</p>
     </div>
     <div class="namepg">FASE PRÉ - OPERATÓRIO</div>
-    <div class="divpage1"></div>
+    <div class="divpage2">
+      <div class="p10 pas2">
+      <p class="l1 topic">A) RECOMENDAÇÕES GERAIS</p>
+      
+      </div>
+    <div class="pa11 pas2">
+      <p class="fundo l1 topic">I) Instrumental Específico</p>
+      <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+      <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+      <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
+    </div>
+    <div class="pa12 pas2">
+      <p class="fundo l1 topic">I) Instrumental Específico</p>
+      <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+      <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+      <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
+    </div>
+    <div class="pa13 pas2">
+      <p class="fundo l1 topic">I) Instrumental Específico</p>
+      <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+      <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+      <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
+    </div>
+    </div>
     <div class="divupfotter">
-      <div class="linepst3 lines">&nbsp;</div>
+      <div class="linefotter lines">&nbsp;</div>
       <p class="local">Local</p>
       <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="dt">Data</p>
@@ -507,11 +702,12 @@ input[type="checkbox"]{
       Normas Informativas E Compartilhada em Cirurgia Plástica*
     </p>
     <div class="divhead">
-      <div class="linepst lines">&nbsp;</div>
-      <div class="linepst2 lines">&nbsp;</div>
+      <div class="lines linepst2">&nbsp;</div>
+      <div class="lines linepst3">&nbsp;</div>
       <p class="fundo">Médico</p>
       <p class="fundo">CRM</p>
       <p class="fundo">Paciente</p>
+      <div class="lines linepst4">&nbsp;</div>
       <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="fundo">Data de Nascimento</p>
       <p class="fundo">Local de Atendimento</p>
@@ -519,7 +715,7 @@ input[type="checkbox"]{
     <div class="namepg">FASE TRANS - OPERATÓRIO</div>
     <div class="divpage1"></div>
     <div class="divupfotter">
-      <div class="linepst3 lines">&nbsp;</div>
+      <div class="linefotter lines">&nbsp;</div>
       <p class="local">Local</p>
       <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="dt">Data</p>
@@ -541,11 +737,12 @@ input[type="checkbox"]{
       Normas Informativas E Compartilhada em Cirurgia Plástica*
     </p>
     <div class="divhead">
-      <div class="linepst lines">&nbsp;</div>
-      <div class="linepst2 lines">&nbsp;</div>
+      <div class="lines linepst2">&nbsp;</div>
+      <div class="lines linepst3">&nbsp;</div>
       <p class="fundo">Médico</p>
       <p class="fundo">CRM</p>
       <p class="fundo">Paciente</p>
+      <div class="lines linepst4">&nbsp;</div>
       <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="fundo">Data de Nascimento</p>
       <p class="fundo">Local de Atendimento</p>
@@ -553,7 +750,7 @@ input[type="checkbox"]{
     <div class="namepg">FASE PÓS - OPERATÓRIO</div>
     <div class="divpage1"></div>
     <div class="divupfotter">
-      <div class="linepst3 lines">&nbsp;</div>
+      <div class="linefotter lines">&nbsp;</div>
       <p class="local">Local</p>
       <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="dt">Data</p>
