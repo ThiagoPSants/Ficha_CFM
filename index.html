@@ -44,18 +44,31 @@
       align-items: center;
    
     }
+    .divhead2 {
+      position: relative;
+      border: solid green 2px;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      width: 94%;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-areas: "l2 l3""l4 l5" "l6 l6" ;
+      height: 73px;
+      align-items: center;
+      text-align: justify;
+  
+   
+    }
 /* Css da linha sem ser o '--'*/
      .lines {
       z-index: 0;
       position: absolute;
       border: 2px solid black;
-      width: 99%;
-      border-left-color: transparent;
-      border-right-color: transparent;
-      border-bottom-color: transparent; 
+      width: 99%; 
     }
 
-    .border {
+  .border {
   border-image: linear-gradient(to top,white 98%, black 99%)1;
   border-width: 4px;
   border-style: solid;
@@ -74,37 +87,49 @@
       
     }
     .linepst2 {
-      margin-top: -10px;
+      margin-top: -30px;
     }
 
     .linepst3 {
-      margin-top: 28px;
+      margin-top: 15px;
     }
 
     .linepst4 {
-      margin-top: 67px;
+      margin-top: 66px;
     }
 
     .linepst5 {
-      margin-top: -35px;
+      margin-top: -30px;
   }   
   .linepst6 {
-      margin-top: 35px;
+      margin-top: 39px;
   }  
   .linepst7 {
-      margin-top: 118px;
+      margin-top: 127px;
   } 
   .linepst8 {
-      margin-top: 38px;
+      margin-top: 45px;
   } 
   .linepst9 {
-      margin-top: 10px;
+      margin-top: 15px;
     
   } 
   .linepst10 {
-      margin-top: 62px;
-    
+      margin-top: 58px;
   } 
+  .linepst11 {
+      margin-top: 45px;
+  }
+  .linepst12 {
+      margin-top: -20px;
+  }
+  .linepst13 {
+      margin-top: 55px;
+  }
+  .linepst14 {
+      margin-top: 140px;
+  }
+
   .linehead{
       z-index: 0;
       position: absolute;
@@ -120,7 +145,9 @@
       border-top-color: solid 1px transparent;
     }
 
-    /* Css do Corpo  */
+  /* Css do Corpo  */
+
+  /* Classes divipagx configuram a tamanho do corpo da pagina e qts blocos terão */
     .divpage1 {
       border: solid green 2px;
       display: block;
@@ -130,8 +157,37 @@
       height: 750px;
       grid-template-areas: "pa1" "pa2" "pa4" "pa5" "pa6" "pa7" "pa8" "pa9";
     }
-    
+    .divpage2 {
+      border: solid green 2px;
+      display: block;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 750px;
+      grid-template-areas: "pa10" "pa11" "pa12" "pa13";
+    }
+    .divpage3 {
+      border: solid green 2px;
+      display: grid;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 750px;
+      /* grid-template-areas: "pa10" "pa11" "pa12" "pa13"; */
 
+    }
+    .divpage4 {
+      border: solid green 2px;
+      display: grid;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 750px;
+      /* grid-template-areas: "pa10" "pa11" "pa12" "pa13"; */
+
+    }
+    
+/* Classes pasx configuram e do corpo das paginas */
     .pas {
       z-index: 2;
       position: relative;
@@ -144,16 +200,18 @@
       text-align: justify;
     }
 
-    .divpage2 {
-      border: solid green 2px;
+    
+  /*   .pas2 {
+      font-family: arial;
+      font-size: 8pt;
       display: grid;
-      width: 95%;
-      margin-left: auto;
-      margin-right: auto;
-      height: 750px;
-      grid-template-areas: "pa10" "pa11" "pa12" "pa13";
+      border: solid transparent  1px;
+      overflow: hidden;
+      
+      
     }
-    .pas2 {
+    
+     .pas3 {
       position: relative;
       font-family: arial;
       font-size: 8pt;
@@ -162,6 +220,27 @@
       overflow: hidden;
       border: solid 2px black;
     }
+    .pas4 {
+      position: relative;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid transparent  1px;
+      overflow: hidden;
+      border: solid 2px black;
+    } */
+    /* .pas {
+      z-index: 2;
+      position: relative;
+      font-family: arial;
+      font-size: 8pt;
+      display: grid;
+      border: solid transparent  1px;
+      overflow: hidden;
+      align-items: center;
+      text-align: justify;} */
+
+    /* Classes pax configuram os blocos dentro do corpo das paginas */
     .pa1 {
       grid-area: pa1;
       grid-template-areas:
@@ -277,10 +356,10 @@
     .pa10 {
       grid-area: pa10;
       border: solid green 2px;
-      height: 50%; 
+      height: 10%; 
       grid-template-areas:
-        "l1 l1"
-        "l2";
+        "l1 l1 l1 l1 "
+        "l2 l3 l4 l5 ";
       border-left-color: transparent;
       border-right-color: transparent;
       border-bottom-color: transparent;
@@ -289,10 +368,10 @@
     .pa11 {
       grid-area: pa11;
       border: solid green 2px;
-      /* height: 7%; */
+       height: 10%; 
       grid-template-areas:
-        "l1 l1 l1 l1"
-        "l2 l3 l4";
+        "l1 l1"
+        "l2 l3";
       border-left-color: transparent;
       border-right-color: transparent;
       border-bottom-color: transparent;
@@ -300,16 +379,41 @@
     .pa12 {
       grid-area: pa12;
       border: solid green 2px;
-      /* height: 7%; */
+      height: 20%; 
       grid-template-areas:
-        "l1 l1 l1"
-        "l2 l3 l4";
+        "l1"
+        "l2" 
+        "l3" 
+        "l4";
       border-left-color: transparent;
       border-right-color: transparent;
       border-bottom-color: transparent;
     }    
     .pa13 {
       grid-area: pa13;
+      height: 60%; 
+      border: solid green 2px;
+      grid-template-areas:
+        "l1"
+        "l2"
+        "l3"
+        "l4"
+        "l5"
+        "l6"
+        "l4"
+        "l7"
+        "l8"
+        "l9"
+        "l10"
+        "l11"
+        "l12"
+        "l13";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa14 {
+      grid-area: pa14;
       border: solid green 2px;
       /* height: 7%; */
       grid-template-areas:
@@ -319,6 +423,151 @@
       border-right-color: transparent;
       border-bottom-color: transparent;
     } 
+    .pa15 {
+      grid-area: pa15;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa16 {
+      grid-area: pa16;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa17 {
+      grid-area: pa17;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa18 {
+      grid-area: pa18;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa19 {
+      grid-area: pa19;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa20 {
+      grid-area: pa21;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa22 {
+      grid-area: pa22;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa23 {
+      grid-area: pa23;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa24 {
+      grid-area: pa24;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa25 {
+      grid-area: pa25;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa26 {
+      grid-area: pa26;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa27 {
+      grid-area: pa27;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+    .pa28 {
+      grid-area: pa28;
+      border: solid green 2px;
+      /* height: 7%; */
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l3 l4";
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    } 
+
+
     /* paths das areas*/
     .l1 {
       font-weight: bold;
@@ -328,48 +577,63 @@
     .l2 {
       grid-area: l2;
     }
+
     .l3 {
       grid-area: l3;
     }
+
     .l4 {
       grid-area: l4;
     }
+
     .l5 {
       grid-area: l5;
     }
+
     .l6 {
       grid-area: l6;
     }
+
     .l7 {
       grid-area: l7;
     }
+
     .l8 {
       grid-area: l8;
     }
+
     .l9 {
       grid-area: l9;
     }
+
     .l10 {
       grid-area: l10;
     }
+
     .l11 {
       grid-area: l11;
     }
+
     .l12 {
       grid-area: l12;
     }
+
     .l13 {
       grid-area: l13;
     }
+
     .l14 {
       grid-area: l14;
     }
+
     .l15 {
       grid-area: l15;
     }
+
     .l16 {
       grid-area: l16;
     }
+
     .l17 {
       grid-area: l17;
     }
@@ -394,11 +658,15 @@
     }
 
     .linefotter {
-      border-bottom-color: black ;
-      width: 90%;
-      height: 25px;
       margin-top: 20px;
-      margin-left: 50px;
+      width: 96%;
+      margin-left: 15;
+     
+    }
+    .linefotter2 {
+      margin-top: 47px;
+      width: 96%;
+      margin-left: 15;
     }
     .local {
       grid-area: local;
@@ -434,7 +702,7 @@
       width: 70px;
       height: 10px;
       background-color: white;
-      margin-left: 40%;
+      margin-left: 50%;
       margin-top: 40px;
     }
 
@@ -544,7 +812,7 @@
         <p class="l13 fundo brkcontent">Sexo: %sexo_paciente%</p>
         <p class="l14">CIC / CPF: %cpf_paciente%</p>
         <p class="l15">Data de Nascimento:%nascimento_paciente%</p>
-        <p class="l16">Local de Nascimento: %pais_nascimento%</p>
+        <p class="l16">Local de Nascimento: </p>
         <p class="l17">UF:</p>
       </div>
       <div class="pa2 pas">
@@ -555,7 +823,7 @@
         <p class="fundo l4">Específica</p>
         <p class="fundo l5 topic">2) Antecedentes</p>
         <p class="fundo l6">Referidos</p>
-        <div class="lines linepst6"></div>
+        <div class="lines linepst6 border"></div>
         <p class="fundo l7">Pesquisados <input type="checkbox" /></p>
         <p class="fundo l8">Tabagismo <input type="checkbox" /></p>
         <p class="fundo l9">Alergia <input type="checkbox"  /></p>
@@ -575,7 +843,7 @@
         <div class="lines linepst9 border"></div>
         <p class="fundo l2">&nbsp;<input type="checkbox" /> Das Técnicas</p>
         <p class="fundo l3">&nbsp;<input type="checkbox" /> Dos Riscos</p>
-        <div class="lines linepst10">&nbsp;</div>
+        <div class="lines linepst10 border"></div>
         <p class="fundo l4">&nbsp;<input type="checkbox" /> Das Cicatrizes</p>
         <p class="fundo l5">&nbsp;<input type="checkbox" /> Do Pós Operatório Imediato / Mediato</p>
       </div>
@@ -584,7 +852,7 @@
         <div class="lines linepst9 border"></div>
         <p class="fundo l2">&nbsp;<input type="checkbox" />Gerais</p>
         <p class="fundo l3">&nbsp;<input type="checkbox" /> Específicos</p>
-        <div class="lines linepst10 border">&nbsp;</div>
+        <div class="lines linepst10 border"></div>
         <p class="fundo l4">&nbsp;<input type="checkbox" /> Outros</p>
         <p class="fundo l5">&nbsp;<input type="checkbox" /> Parecer Risco Cirúrgico</p>
       </div>
@@ -593,12 +861,12 @@
         <div class="lines linepst9 border"></div>
         <p class="fundo l2">&nbsp;<input type="checkbox" />Indicada</p>
         <p class="fundo l3">&nbsp;<input type="checkbox" /> Encaminhada</p>
-        <div class="lines linepst10 border">&nbsp;</div>
+        <div class="lines linepst10 border"></div>
         <p class="fundo l4">&nbsp;<input type="checkbox" /> Prescrição Especial</p>
       </div>
       <div class="pa7 pas">
         <p class="fundo l1 topic">G) Do Cirurgião</p>
-        <div class="lines linepst6 border"></div>
+        <div class="lines linepst11 border"></div>
         <p class="fundo l2"><input type="checkbox" /> Especialista AMB (SBCP)</p>
         <p class="fundo l3">&nbsp;<input type="checkbox" /> Título da CNRM</p>
       </div>
@@ -622,6 +890,7 @@
       <p class="local">Local</p>
       <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="dt">Data</p>
+      <div class="linefotter2 lines border"></div>
       <div class="space">&nbsp;</div>
       <p class="med">Médico Assistente</p>
       <p class="paci">Paciente ou Responsável</p>
@@ -636,54 +905,75 @@
     </div>
 
     <div class="brkpg">
-      <br />
+      <br /></div>
       <!-- ACABOU FIRST PAGE-->
-    </div>
+    
     <!-- Inicio 2 PAGE-->
     <p class="titulo">
       Normas Informativas E Compartilhada em Cirurgia Plástica*
     </p>
-    <div class="divhead">
-      <div class="lines linepst2">&nbsp;</div>
-      <div class="lines linepst3">&nbsp;</div>
-      <p class="fundo">Médico</p>
-      <p class="fundo">CRM</p>
-      <p class="fundo">Paciente</p>
-      <div class="lines linepst4">&nbsp;</div>
+    <div class="divhead2">
+      <div class="lines linepst2 border"></div>
+      <div class="lines linepst3 border"></div>
+      <p class="l2 fundo">Médico</p>
+      <p class="l3 fundo">CRM</p>
+      <p class="l4 fundo">Paciente</p>
+      <div class="lines linepst4 border"></div>
       <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-      <p class="fundo">Data de Nascimento</p>
-      <p class="fundo">Local de Atendimento</p>
+      <p class="l5 fundo">Data de Nascimento</p>
+      <p class="l6 fundo">Local de Atendimento</p>
     </div>
-    <div class="namepg">FASE PRÉ - OPERATÓRIO</div>
+    <div class="namepg">FASE PRÉ - OPERATÓRIO
+    </div>
     <div class="divpage2">
-      <div class="p10 pas2">
-      <p class="l1 topic">A) RECOMENDAÇÕES GERAIS</p>
-      
+      <div class="pa10 pas">
+        <p class="l1 topic fundo brkcontent">A) RECOMENDAÇÕES GERAIS</p>
+        <p class="fundo l2">&nbsp;<input type="checkbox" /> Pedido de internação</p>
+        <p class="fundo l3">&nbsp;<input type="checkbox" /> Dieta / Jejum</p>
+        <p class="fundo l4">&nbsp;<input type="checkbox" /> Prescrição</p>
+        <p class="fundo l5">&nbsp;<input type="checkbox" /> edicamentos de uso contínuo</p>
       </div>
-    <div class="pa11 pas2">
-      <p class="fundo l1 topic">I) Instrumental Específico</p>
-      <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
-      <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
-      <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
-    </div>
-    <div class="pa12 pas2">
-      <p class="fundo l1 topic">I) Instrumental Específico</p>
-      <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
-      <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
-      <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
-    </div>
-    <div class="pa13 pas2">
-      <p class="fundo l1 topic">I) Instrumental Específico</p>
-      <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
-      <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
-      <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
-    </div>
-    </div>
+      <div class="pa11 pas">
+        <p class="l1 topic fundo brkcontent">B) RECOMENDAÇÕES ESPECÍFICAS</p>
+        <p class="fundo l2">&nbsp;<input type="checkbox" /> Preparo de área cirurgica</p>
+        <p class="fundo l3">&nbsp;<input type="checkbox" /> Trazer cinta / meia / soutien</p>
+      </div>
+      <div class="pa12 pas">
+        <p class="fundo l1 topic">C) CHECAGEM DE ÁREA CIRÚRGICA</p>
+        <div class="lines linepst12 border"></div>
+        <p class="fundo l2"><input type="checkbox" /> Fotografias</p>
+        <div class="lines linepst13 border"></div>
+        <p class="fundo l3">&nbsp;<input type="checkbox" /> Marcações</p>
+        <div class="lines linepst14 border"></div>
+        <p class="fundo l4">&nbsp;<input type="checkbox" /> Anotação de Lesões (alterações observadas)</p>
+      </div>
+      <div class="pa13">
+        <p class="fundo l1">OBSERVAÇÕES</p>
+        <div class=" l2 linepst3 border"></div>
+        <div class=" l3 linepst9 border"></div>
+        <div class=" l4 linepst3 border"></div>
+        <div class=" l5 linepst9 border"></div>
+        <div class=" l2 linepst3 border"></div>
+        <div class=" l3 linepst9 border"></div>
+        <div class=" l4 linepst3 border"></div>
+        <div class=" l5 linepst9 border"></div>
+        <div class=" l2 linepst3 border"></div>
+        <div class=" l3 linepst9 border"></div>
+        <div class=" l4 linepst3 border"></div>
+        <div class=" l5 linepst9 border"></div>
+        <div class=" l2 linepst3 border"></div>
+        <div class=" l3 linepst9 border"></div>
+        <div class=" l4 linepst3 border"></div>
+        <div class=" l5 linepst9 border"></div>
+        
+      </div>
+    </div>  
     <div class="divupfotter">
-      <div class="linefotter lines">&nbsp;</div>
+      <div class="linefotter lines border"></div>
       <p class="local">Local</p>
       <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="dt">Data</p>
+      <div class="linefotter2 lines border"></div>
       <div class="space">&nbsp;</div>
       <p class="med">Médico Assistente</p>
       <p class="paci">Paciente ou Responsável</p>
@@ -701,29 +991,51 @@
     <p class="titulo">
       Normas Informativas E Compartilhada em Cirurgia Plástica*
     </p>
-    <div class="divhead">
-      <div class="lines linepst2">&nbsp;</div>
-      <div class="lines linepst3">&nbsp;</div>
-      <p class="fundo">Médico</p>
-      <p class="fundo">CRM</p>
-      <p class="fundo">Paciente</p>
-      <div class="lines linepst4">&nbsp;</div>
+    <div class="divhead2">
+      <div class="lines linepst2 border"></div>
+      <div class="lines linepst3 border"></div>
+      <p class="l2 fundo">Médico</p>
+      <p class="l3 fundo">CRM</p>
+      <p class="l4 fundo">Paciente</p>
+      <div class="lines linepst4 border"></div>
       <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-      <p class="fundo">Data de Nascimento</p>
-      <p class="fundo">Local de Atendimento</p>
+      <p class="l5 fundo">Data de Nascimento</p>
+      <p class="l6 fundo">Local de Atendimento</p>
     </div>
     <div class="namepg">FASE TRANS - OPERATÓRIO</div>
-    <div class="divpage1"></div>
-    <div class="divupfotter">
-      <div class="linefotter lines">&nbsp;</div>
+    <div class="divpage3"> 
+    
+    
+        <div class="pa11 pas3">
+          <p class="fundo l1 topic">I) Instrumental Específico</p>
+          <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+          <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+          <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
+        </div>
+        <div class="pa12 pas3">
+          <p class="fundo l1 topic">I) Instrumental Específico</p>
+          <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+          <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+          <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
+        </div>
+        <div class="pa13 pas3">
+          <p class="fundo l1 topic">I) Instrumental Específico</p>
+          <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+          <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+          <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
+        </div>
+         </div> 
+      <div class="divupfotter">
+      <div class="linefotter lines border"></div>
       <p class="local">Local</p>
       <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="dt">Data</p>
+      <div class="linefotter2 lines border"></div>
       <div class="space">&nbsp;</div>
       <p class="med">Médico Assistente</p>
       <p class="paci">Paciente ou Responsável</p>
-    </div>
-    <div class="divfotter">
+      </div>
+      <div class="divfotter">
       <p class="txtftt">
         *Este conjunto de normas de conduta de segurança foi elaborado pela
         Câmara Técnica de Cirurgia Plástica do Consellho Federal de Medicina
@@ -733,32 +1045,55 @@
     </div>
     <div class="brkpg"><br /></div>
     <!-- Inicio 4 PAGE-->
+    
     <p class="titulo">
       Normas Informativas E Compartilhada em Cirurgia Plástica*
     </p>
-    <div class="divhead">
-      <div class="lines linepst2">&nbsp;</div>
-      <div class="lines linepst3">&nbsp;</div>
-      <p class="fundo">Médico</p>
-      <p class="fundo">CRM</p>
-      <p class="fundo">Paciente</p>
-      <div class="lines linepst4">&nbsp;</div>
+    <div class="divhead2">
+      <div class="lines linepst2 border"></div>
+      <div class="lines linepst3 border"></div>
+      <p class="l2 fundo">Médico</p>
+      <p class="l3 fundo">CRM</p>
+      <p class="l4 fundo">Paciente</p>
+      <div class="lines linepst4 border"></div>
       <p class="barrahead">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-      <p class="fundo">Data de Nascimento</p>
-      <p class="fundo">Local de Atendimento</p>
+      <p class="l5 fundo">Data de Nascimento</p>
+      <p class="l6 fundo">Local de Atendimento</p>
     </div>
-    <div class="namepg">FASE PÓS - OPERATÓRIO</div>
-    <div class="divpage1"></div>
-    <div class="divupfotter">
-      <div class="linefotter lines">&nbsp;</div>
+    <div class="namepg">FASE TRANS - OPERATÓRIO</div>
+    <div class="divpage4"> 
+    
+    
+        <div class="pa11 pas3">
+          <p class="fundo l1 topic">I) Instrumental Específico</p>
+          <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+          <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+          <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
+        </div>
+        <div class="pa12 pas3">
+          <p class="fundo l1 topic">I) Instrumental Específico</p>
+          <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+          <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+          <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
+        </div>
+        <div class="pa13 pas3">
+          <p class="fundo l1 topic">I) Instrumental Específico</p>
+          <p class="fundo l2">&nbsp;<input type="checkbox" />&nbsp;Próprios</p>
+          <p class="fundo l3">&nbsp;<input type="checkbox" />&nbsp;Do Hospital / Clínica</p>
+          <p class="fundo l4">&nbsp;<input type="checkbox" />&nbsp;De Ambos</p>
+        </div>
+         </div> 
+      <div class="divupfotter">
+      <div class="linefotter lines border"></div>
       <p class="local">Local</p>
       <p class="barraftt">/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
       <p class="dt">Data</p>
+      <div class="linefotter2 lines border"></div>
       <div class="space">&nbsp;</div>
       <p class="med">Médico Assistente</p>
       <p class="paci">Paciente ou Responsável</p>
-    </div>
-    <div class="divfotter">
+      </div>
+      <div class="divfotter">
       <p class="txtftt">
         *Este conjunto de normas de conduta de segurança foi elaborado pela
         Câmara Técnica de Cirurgia Plástica do Consellho Federal de Medicina
@@ -766,5 +1101,6 @@
       </p>
       <p class="numerador">Pag. 4</p>
     </div>
+    <div class="brkpg"><br /></div>
   </div>
 </body>
